@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/lucaspolonio/link-previewer.svg?branch=master)](https://travis-ci.org/lucaspolonio/link-previewer)
 
-# Link::Previewer
+# LinkPreviewer
 
 TODO: Write a gem description
 
