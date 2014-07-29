@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/lucaspolonio/link-previewer.svg?branch=master)](https://travis-ci.org/lucaspolonio/link-previewer)
+[![Test Coverage](https://codeclimate.com/github/lucaspolonio/link-previewer/coverage.png)](https://codeclimate.com/github/lucaspolonio/link-previewer)
 
 # LinkPreviewer
 
