@@ -6,7 +6,9 @@ module LinkPreviewer
     describe Parser do
 
       it 'fetches a URL contents correctly' do
-        pending
+        parser = Parser.new('http://www.google.com')
+        expect(parser.html).to include('<!doctype html>')
+        expect(parser.html).to include('<title>Google</title>')
       end
 
       it 'follows redirects' do
