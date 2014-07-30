@@ -1,2 +1,4 @@
-class Parser
+module LinkPreviewer
+  class Parser
+  end
 end

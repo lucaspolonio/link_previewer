@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 
-describe Parser do
+describe LinkPreviewer::Parser do
 
   it 'fetches a URL contents correctly' do
     pending
