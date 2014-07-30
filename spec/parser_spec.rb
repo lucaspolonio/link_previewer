@@ -1,7 +1,18 @@
 require 'spec_helper'
 
-describe LinkPreviewer do
-  it 'does stuff' do
-    expect(1).to eq(1)
+
+describe Parser do
+
+  it 'fetches a URL contents correctly' do
+    pending
   end
+
+  it 'follows redirects' do
+    pending
+  end
+
+  it 'gets HTML elements by tag' do
+    pending
+  end
+
 end
