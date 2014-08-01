@@ -13,8 +13,12 @@ module LinkPreviewer
         expect(parser.html).to include('<title>Google</title>')
       end
 
-      it 'gets HTML elements by tag' do
-        
+      it 'gets contents of a HTML tag' do
+        expect(parser.tag_contents 'title').to eq('Google')
+      end
+
+      it 'gets image src from selector' do
+        expect(parser.image_src '.gsok_a.gsst_e img').to include('//www.gstatic.com/inputtools/images/tia.png')
       end
 
       it 'follows redirects' do
