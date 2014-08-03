@@ -20,7 +20,13 @@ module LinkPreviewer
         pending
         fail
       end
-      
+
+      it 'gets meta tags contents' do 
+        #expect(parser.meta_tag_contents).to eq(nil)
+        pending
+        fail
+      end
+
     end
 
   end

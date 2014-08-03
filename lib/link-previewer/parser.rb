@@ -13,6 +13,11 @@ module LinkPreviewer
       el.content if el
     end
 
+    def meta_tag_contents(meta_tag_selector)
+      el = @nokogiri_html.css(meta_tag_selector).first
+      el.attr('content') if el
+    end
+
     def image_src(css_selector)
       @nokogiri_html.css(css_selector).first['src']
     end
