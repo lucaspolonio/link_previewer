@@ -9,7 +9,8 @@ module LinkPreviewer
     end
 
     def tag_contents(tag)
-      @nokogiri_html.css(tag).first.content
+      el = @nokogiri_html.css(tag).first
+      el.content if el
     end
 
     def image_src(css_selector)
