@@ -5,15 +5,14 @@ module LinkPreviewer
 
     describe Parser do
 
-      #shouldn't depend on external resources, TODO should I use a stub?
-      let(:parser) { Parser.new('http://www.google.com') }
+      let(:parser) { Parser.new('http://www.example.com') }
 
-      it 'gets contents of a HTML tag' do
-        expect(parser.tag_contents 'title').to eq('Google')
+      it 'gets contents of an HTML tag' do
+        expect(parser.tag_contents 'title').to eq('Page title')
       end
 
       it 'gets image src from selector' do
-        expect(parser.image_src 'img').to include('/images/')
+        expect(parser.image_src 'img').to eq('image.jpg')
       end
 
       it 'follows redirects' do
