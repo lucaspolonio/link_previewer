@@ -19,7 +19,7 @@ module LinkPreviewer
     end
 
     def image_src(css_selector)
-      @nokogiri_html.css(css_selector).first['src']
+      @nokogiri_html.css(css_selector).map{|el| el['src']}
     end
 
   end
