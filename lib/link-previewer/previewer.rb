@@ -26,7 +26,12 @@ module LinkPreviewer
     end
 
     def images
-      @parser.image_src 'img'
+      images = []
+      if (og_image = @parser.meta_tag_contents "meta[@property='og:image']")
+        return images << og_image
+      elsif (twitter_image = @parser.meta_tag_contents "meta[@property='twitter:image']")
+        return images << twitter_image
+      end
     end
 
   end

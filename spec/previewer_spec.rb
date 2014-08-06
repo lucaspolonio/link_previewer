@@ -34,13 +34,15 @@ module LinkPreviewer
       end
 
       describe '#images' do
+        it 'gives twitter tags high priority on images' do
+          expect(previewer_twitter.images.first).to eq('twitter-image.jpg')
+        end
+        it 'gives opengraph tags even higher priority on images' do
+          expect(previewer_open_graph.images.first).to eq('opengraph-image.jpg')
+        end
         it 'previews webpages images' do
           #expect(previewer.images.size).to eq(1)
           #expect(previewer.images.first).to eq('image.jpg')
-          pending
-          fail
-        end
-        it 'gives opengraph images higher priority' do
           pending
           fail
         end
