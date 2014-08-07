@@ -6,6 +6,7 @@ module LinkPreviewer
     describe Parser do
 
       let(:parser) { Parser.new('http://www.example.com') }
+      let(:redirected_parser) { Parser.new('http://www.redirect-example.com') }
 
       it 'gets contents of an HTML tag' do
         expect(parser.tag_contents 'title').to eq('Page title')
@@ -18,8 +19,7 @@ module LinkPreviewer
       end
 
       it 'follows redirects' do
-        pending
-        fail
+        expect(redirected_parser.tag_contents 'title').to eq('Page title')
       end
 
       it 'gets meta tags contents' do 
