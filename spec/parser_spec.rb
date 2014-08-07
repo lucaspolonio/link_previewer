@@ -13,9 +13,7 @@ module LinkPreviewer
       end
 
       it 'gets image src from selector' do
-        # expect(og_parser.image_src 'img').to eq('image.jpg')
-        pending
-        fail
+        expect(og_parser.image_src('#first_image').first).to eq('image.jpg')
       end
 
       it 'gets meta tags contents' do 
