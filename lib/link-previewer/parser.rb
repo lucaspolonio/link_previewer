@@ -18,6 +18,14 @@ module LinkPreviewer
       el.attr('content') if el
     end
 
+    def meta_tag_contents_by_property(property)
+      meta_tag_contents "meta[@property='#{property}']"
+    end
+
+    def meta_tag_contents_by_name(name)
+      meta_tag_contents "meta[name='#{name}']"
+    end
+
     def image_src(css_selector)
       @nokogiri_html.css(css_selector).map{|el| el['src']}
     end
