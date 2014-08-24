@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'link-previewer/version'
+require 'link_previewer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "link-previewer"
+  spec.name          = "link_previewer"
   spec.version       = LinkPreviewer::VERSION
   spec.authors       = ["Lucas Polonio"]
   spec.email         = ["polonio.lucas@gmail.com"]

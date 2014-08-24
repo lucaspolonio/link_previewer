@@ -1,6 +1,6 @@
 require 'pry'
 require 'webmock/rspec'
-require 'link-previewer'
+require 'link_previewer'
 
 RSpec.configure do |config|
   config.before(:each) do

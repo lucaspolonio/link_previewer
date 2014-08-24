@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/lucaspolonio/link-previewer.svg?branch=master)](https://travis-ci.org/lucaspolonio/link-previewer)
-[![Code Climate](https://codeclimate.com/github/lucaspolonio/link-previewer.png)](https://codeclimate.com/github/lucaspolonio/link-previewer)
+[![Build Status](https://travis-ci.org/lucaspolonio/link_previewer.svg?branch=master)](https://travis-ci.org/lucaspolonio/link_previewer)
+[![Code Climate](https://codeclimate.com/github/lucaspolonio/link_previewer.png)](https://codeclimate.com/github/lucaspolonio/link_previewer)
 
 # LinkPreviewer - alpha
 
@@ -10,7 +10,7 @@ Tries to detect the best title, description and images to preview a link.
 
 Add this line to your application's Gemfile:
 
-    gem 'link-previewer'
+    gem 'link_previewer'
 
 And then execute:
 
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install link-previewer
+    $ gem install link_previewer
 
 ## Usage
 
@@ -26,7 +26,7 @@ TODO
 
 ## Contributing
 
-1. Fork it ( http://github.com/lucaspolonio/link-previewer/fork )
+1. Fork it ( http://github.com/lucaspolonio/link_previewer/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
